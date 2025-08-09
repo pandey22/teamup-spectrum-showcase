@@ -2,9 +2,8 @@ import { Badge } from "@/components/ui/badge";
 
 const TrustedBy = () => {
   const companies = [
-    "Qualcomm", "Arris/CommScope", "Verizon", "Samsung", 
-    "ATX Networks", "HP", "Comcast", "SAIC", 
-    "KBR", "CACI", "U.S. Government"
+    "Qualcomm", "CommScope", "Verizon", "Samsung", 
+    "ATX Networks"
   ];
 
   return (

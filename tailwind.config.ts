@@ -18,6 +18,7 @@ export default {
 			}
 		},
 		extend: {
+		
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -140,5 +141,12 @@ export default {
 			}
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [
+  require("tailwindcss-animate"),
+  function ({ addBase }) {
+    addBase({
+      'html': { scrollBehavior: 'smooth' },
+    })
+  }
+],
 } satisfies Config;

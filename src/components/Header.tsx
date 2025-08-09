@@ -27,9 +27,6 @@ const Header = () => {
             <a href="#services" className="text-muted-foreground hover:text-foreground transition-colors">
               Services
             </a>
-            <a href="#expertise" className="text-muted-foreground hover:text-foreground transition-colors">
-              Expertise
-            </a>
             <a href="#case-studies" className="text-muted-foreground hover:text-foreground transition-colors">
               Case Studies
             </a>
@@ -57,9 +54,6 @@ const Header = () => {
               </a>
               <a href="#services" className="text-muted-foreground hover:text-foreground transition-colors">
                 Services
-              </a>
-              <a href="#expertise" className="text-muted-foreground hover:text-foreground transition-colors">
-                Expertise
               </a>
               <a href="#case-studies" className="text-muted-foreground hover:text-foreground transition-colors">
                 Case Studies
