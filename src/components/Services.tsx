@@ -77,10 +77,6 @@ const Services = () => {
                     </li>
                   ))}
                 </ul>
-                <Button variant="outline-hero" className="group">
-                  Learn More
-                  <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </Button>
               </CardContent>
             </Card>
           ))}

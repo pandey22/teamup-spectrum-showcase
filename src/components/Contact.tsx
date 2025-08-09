@@ -25,14 +25,11 @@ const Contact = () => {
             Wi-Fi networks, or upgrading mission-critical public-safety systems — we're here to help.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <Button variant="hero" size="xl" className="group">
               <Mail className="w-5 h-5" />
               engage@teamuptech.com
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button variant="outline-hero" size="xl">
-              Schedule Consultation
             </Button>
           </div>
         </div>

@@ -38,15 +38,6 @@ const Header = () => {
             </a>
           </nav>
 
-          {/* CTA Buttons */}
-          <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline-hero" size="sm">
-              Get Quote
-            </Button>
-            <Button variant="hero" size="sm">
-              Hire RF Engineers
-            </Button>
-          </div>
 
           {/* Mobile Menu Button */}
           <button
@@ -76,14 +67,6 @@ const Header = () => {
               <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
                 Contact
               </a>
-              <div className="flex flex-col space-y-2 pt-4">
-                <Button variant="outline-hero" size="sm">
-                  Get Quote
-                </Button>
-                <Button variant="hero" size="sm">
-                  Hire RF Engineers
-                </Button>
-              </div>
             </nav>
           </div>
         )}

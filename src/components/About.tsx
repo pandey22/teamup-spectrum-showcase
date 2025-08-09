@@ -50,10 +50,6 @@ const About = () => {
               </p>
             </div>
 
-            <Button variant="hero" size="lg" className="group">
-              Learn More About Us
-              <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
           </div>
 
           {/* Features */}

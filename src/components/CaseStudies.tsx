@@ -83,7 +83,7 @@ const CaseStudies = () => {
           {caseStudies.map((study, index) => (
             <Card 
               key={study.id} 
-              className="bg-gradient-card border-card-border backdrop-blur-sm hover:shadow-card transition-all duration-300 animate-fade-in"
+              className="bg-gradient-card border-card-border backdrop-blur-sm hover:shadow-card transition-all duration-300 animate-fade-in flex flex-col h-full"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardHeader>
@@ -97,15 +97,15 @@ const CaseStudies = () => {
                   {study.shortDesc}
                 </CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="flex-1 flex flex-col justify-end">
                 <Dialog>
                   <DialogTrigger asChild>
-                    <Button variant="outline-hero" className="group w-full">
+                    <Button variant="outline-hero" className="group w-full mt-auto">
                       Read Full Case Study
                       <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </Button>
                   </DialogTrigger>
-                  <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto bg-gradient-card border-card-border">
+                  <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto bg-background border border-border">
                     <DialogHeader>
                       <div className="flex justify-between items-start">
                         <div>

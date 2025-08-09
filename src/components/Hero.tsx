@@ -51,21 +51,6 @@ const Hero = () => {
               </Button>
             </div>
 
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-8 pt-8 border-t border-border">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-foreground">15+</div>
-                <div className="text-sm text-muted-foreground">Years Experience</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-foreground">100+</div>
-                <div className="text-sm text-muted-foreground">Projects Delivered</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-foreground">24/7</div>
-                <div className="text-sm text-muted-foreground">Support Available</div>
-              </div>
-            </div>
           </div>
 
           {/* Hero Image */}
