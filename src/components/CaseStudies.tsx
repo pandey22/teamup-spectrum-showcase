@@ -79,30 +79,30 @@ const CaseStudies = () => {
         </div>
 
         {/* Case Studies Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {caseStudies.map((study, index) => (
             <Card 
               key={study.id} 
-              className="bg-gradient-card border-card-border backdrop-blur-sm hover:shadow-card transition-all duration-300 animate-fade-in flex flex-col h-full"
+              className="bg-gradient-card border-card-border backdrop-blur-sm hover:shadow-card transition-all duration-300 animate-fade-in flex flex-col aspect-square"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <CardHeader>
+              <CardHeader className="flex-1">
                 <Badge variant="secondary" className="w-fit mb-2">
                   {study.category}
                 </Badge>
-                <CardTitle className="text-xl font-bold text-foreground line-clamp-2">
+                <CardTitle className="text-lg font-bold text-foreground line-clamp-3">
                   {study.title}
                 </CardTitle>
-                <CardDescription className="text-muted-foreground">
+                <CardDescription className="text-muted-foreground text-sm line-clamp-4">
                   {study.shortDesc}
                 </CardDescription>
               </CardHeader>
-              <CardContent className="flex-1 flex flex-col justify-end">
+              <CardContent className="pt-0">
                 <Dialog>
                   <DialogTrigger asChild>
-                    <Button variant="outline-hero" className="group w-full mt-auto">
+                    <Button variant="outline-hero" size="sm" className="group w-full">
                       Read Full Case Study
-                      <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                      <ChevronRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
                     </Button>
                   </DialogTrigger>
                   <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto bg-background border border-border">
