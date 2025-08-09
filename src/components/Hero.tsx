@@ -76,21 +76,6 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Trusted By Section */}
-      <div className="absolute bottom-0 left-0 right-0 bg-muted/50 backdrop-blur-sm border-t border-border py-6">
-        <div className="container mx-auto px-6">
-          <div className="text-center">
-            <p className="text-sm text-muted-foreground mb-4">Trusted by industry leaders</p>
-            <div className="flex justify-center items-center space-x-8 text-muted-foreground">
-              <span className="text-lg font-semibold">Qualcomm</span>
-              <span className="text-lg font-semibold">Verizon</span>
-              <span className="text-lg font-semibold">Samsung</span>
-              <span className="text-lg font-semibold">CommScope</span>
-              <span className="text-lg font-semibold">Comcast</span>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
   );
 };

@@ -79,28 +79,28 @@ const CaseStudies = () => {
         </div>
 
         {/* Case Studies Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
           {caseStudies.map((study, index) => (
             <Card 
               key={study.id} 
-              className="bg-gradient-card border-card-border backdrop-blur-sm hover:shadow-card transition-all duration-300 animate-fade-in flex flex-col aspect-square"
+              className="bg-gradient-card border-card-border backdrop-blur-sm hover:shadow-card transition-all duration-300 animate-fade-in flex flex-col aspect-square max-w-sm mx-auto"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <CardHeader className="flex-1">
-                <Badge variant="secondary" className="w-fit mb-2">
+              <CardHeader className="flex-1 pb-2">
+                <Badge variant="secondary" className="w-fit mb-1 text-xs">
                   {study.category}
                 </Badge>
-                <CardTitle className="text-lg font-bold text-foreground line-clamp-3">
+                <CardTitle className="text-base font-bold text-foreground line-clamp-3">
                   {study.title}
                 </CardTitle>
-                <CardDescription className="text-muted-foreground text-sm line-clamp-4">
+                <CardDescription className="text-muted-foreground text-xs line-clamp-4">
                   {study.shortDesc}
                 </CardDescription>
               </CardHeader>
-              <CardContent className="pt-0">
+              <CardContent className="pt-0 pb-4">
                 <Dialog>
                   <DialogTrigger asChild>
-                    <Button variant="outline-hero" size="sm" className="group w-full">
+                    <Button variant="outline-hero" size="sm" className="group w-full text-xs h-8">
                       Read Full Case Study
                       <ChevronRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
                     </Button>
