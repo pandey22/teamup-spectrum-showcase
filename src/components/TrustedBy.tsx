@@ -33,11 +33,11 @@ const TrustedBy = () => {
           ))}
         </div> */}
         <div className="flex items-center gap-20 justify-center flex-wrap mt-8 animate-fade-in">
-          <img src="./src/assets/Qualcomm.svg" alt="qualcomm" className="w-20 h-auto"/>
-          <img src="./src/assets/verizon.svg" alt="Verizon" className="w-20 h-auto"/>
-          <img src="./src/assets/samsung.svg" alt="samsung" className="w-20 h-auto"/>
-          <img src="./src/assets/commscope.svg" alt="commScope" className="w-20 h-auto "/>
-          <img src="./src/assets/hp.png" alt="HP" className="w-10 h-auto"/>
+          <img src="./assets/Qualcomm.svg" alt="qualcomm" className="w-20 h-auto"/>
+          <img src="./assets/verizon.svg" alt="Verizon" className="w-20 h-auto"/>
+          <img src="./assets/samsung.svg" alt="samsung" className="w-20 h-auto"/>
+          <img src="./assets/commscope.svg" alt="commScope" className="w-20 h-auto "/>
+          <img src="./assets/hp.png" alt="HP" className="w-10 h-auto"/>
         </div>
       </div>
     </section>
