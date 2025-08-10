@@ -10,9 +10,7 @@ const TrustedBy = () => {
     <section className="py-16 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12 animate-fade-in">
-          <Badge variant="outline" className="mb-4">
-            Industry Leaders
-          </Badge>
+
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
             <span className="text-foreground">Trusted by</span>
             <span className="bg-gradient-text bg-clip-text text-transparent"> Industry Leaders</span>
@@ -34,16 +32,12 @@ const TrustedBy = () => {
             </div>
           ))}
         </div> */}
-        <div className="flex items-center gap-40 justify-center flex-wrap mt-8 animate-fade-in">
+        <div className="flex items-center gap-20 justify-center flex-wrap mt-8 animate-fade-in">
           <img src="./src/assets/qualcomm.svg" alt="qualcomm" className="w-20 h-auto"/>
           <img src="./src/assets/verizon.svg" alt="Verizon" className="w-20 h-auto"/>
           <img src="./src/assets/samsung.svg" alt="samsung" className="w-20 h-auto"/>
           <img src="./src/assets/commscope.svg" alt="commScope" className="w-20 h-auto "/>
-
-          <img src="./src/assets/qualcomm.svg" alt="commScope" className="w-20 h-auto"/>
-
-          
-
+          <img src="./src/assets/hp.png" alt="HP" className="w-10 h-auto"/>
         </div>
       </div>
     </section>
