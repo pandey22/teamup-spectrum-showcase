@@ -22,7 +22,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-background">
+    <section className="relative min-h-screen flex items-center bg-gradient-hero overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
