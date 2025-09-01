@@ -50,16 +50,6 @@ const Hero = () => {
                 alt="RF Engineering Technology"
                 className="w-full h-auto rounded-2xl shadow-elegant"
               />
-              
-              {/* Floating Elements */}
-              <div className="absolute -top-4 -right-4 bg-gradient-accent rounded-xl p-4 shadow-glow animate-float">
-                <Zap className="w-8 h-8 text-white" />
-              </div>
-              
-              <div className="absolute -bottom-4 -left-4 bg-card backdrop-blur-md border border-card-border rounded-xl p-4 shadow-card animate-float" style={{ animationDelay: '1s' }}>
-                <div className="text-sm font-semibold text-foreground">RF Optimization</div>
-                <div className="text-xs text-muted-foreground">5G/LTE Networks</div>
-              </div>
             </div>
           </div>
         </div>

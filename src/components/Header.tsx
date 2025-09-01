@@ -11,9 +11,6 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-accent rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">T</span>
-            </div>
             <span className="text-2xl font-bold bg-gradient-text bg-clip-text text-transparent">
               Teamup Tech
             </span>

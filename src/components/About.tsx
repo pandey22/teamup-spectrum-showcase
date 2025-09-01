@@ -52,28 +52,7 @@ const About = () => {
 
           </div>
 
-          {/* Features */}
-          <div className="space-y-6 animate-slide-in">
-            {features.map((feature, index) => (
-              <div 
-                key={index} 
-                className="flex items-start space-x-4 p-6 bg-gradient-card border border-card-border rounded-xl backdrop-blur-sm hover:shadow-card transition-all duration-300"
-                style={{ animationDelay: `${index * 0.2}s` }}
-              >
-                <div className="w-12 h-12 bg-gradient-accent rounded-lg flex items-center justify-center flex-shrink-0 shadow-glow">
-                  <feature.icon className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-foreground mb-2">
-                    {feature.title}
-                  </h3>
-                  <p className="text-muted-foreground">
-                    {feature.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
+          {/* Additional content can go here if needed */}
         </div>
       </div>
     </section>

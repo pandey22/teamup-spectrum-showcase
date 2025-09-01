@@ -1,48 +1,25 @@
 import { Badge } from "@/components/ui/badge";
 
 const Footer = () => {
-  const footerSections = [
-    {
-      title: "About",
-      links: [
-        { name: "Resources", href: "#" },
-        { name: "Developers", href: "#" },
-        { name: "Pricing", href: "#" }
-      ]
-    },
-    {
-      title: "Links",
-      links: [
-        { name: "Marketplace", href: "#" },
-        { name: "Dashboard", href: "#" },
-        { name: "Blog", href: "#" }
-      ]
-    },
-    {
-      title: "Resources",
-      links: [
-        { name: "Guides", href: "#" },
-        { name: "Support center", href: "#" },
-        { name: "API reference", href: "#" }
-      ]
-    },
-    {
-      title: "Developers",
-      links: [
-        { name: "Guides", href: "#" },
-        { name: "API reference", href: "#" }
-      ]
-    },
-    {
-      title: "Company",
-      links: [
-        { name: "Careers", href: "#" },
-        { name: "Terms of service", href: "#" }
-      ]
-    }
-  ];
-
-
+  return (
+    <footer className="py-16 bg-background border-t border-border">
+      <div className="container mx-auto px-6">
+        <div className="text-center">
+          <div className="flex items-center justify-center space-x-2 mb-4">
+            <span className="text-2xl font-bold bg-gradient-text bg-clip-text text-transparent">
+              Teamup Tech
+            </span>
+          </div>
+          <p className="text-muted-foreground">
+            Elite RF Engineering Excellence
+          </p>
+          <p className="text-sm text-muted-foreground mt-8">
+            © 2024 Teamup Tech. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;
