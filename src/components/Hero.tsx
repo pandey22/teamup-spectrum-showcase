@@ -29,9 +29,9 @@ const Hero = () => {
                   with Elite RF Engineering
                 </span>
               </h1>
-              
+              <br /><br />
               <p className="text-xl text-muted-foreground max-w-2xl leading-relaxed">
-                Teamup Tech delivers contract RF engineers and turnkey RF solutions for the telecommunications and networking industry. From 5G and LTE to DOCSIS, Wi-Fi, MoCA, and public-safety systems.
+                TeamUP Tech delivers contract RF engineers and turnkey RF solutions for the telecommunications and networking industry. From 5G and LTE to DOCSIS, Wi-Fi, MoCA, and public-safety systems.
               </p>
             </div>
 

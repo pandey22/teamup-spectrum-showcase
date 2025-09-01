@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="text-center">
           <div className="flex items-center justify-center space-x-2 mb-4">
             <span className="text-2xl font-bold bg-gradient-text bg-clip-text text-transparent">
-              Teamup Tech
+              TeamUP Tech
             </span>
           </div>
           <p className="text-muted-foreground">

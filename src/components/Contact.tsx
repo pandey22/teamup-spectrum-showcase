@@ -33,18 +33,10 @@ const Contact = () => {
             </Button>
           </div>
         </div>
-
-        {/* Contact Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 animate-fade-in">
-          <Card className="bg-gradient-card border-card-border backdrop-blur-sm hover:shadow-card transition-all duration-300">
-           
-          </Card>
-
           
 
          
         </div>
-      </div>
     </section>
   );
 };

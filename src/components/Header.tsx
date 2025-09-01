@@ -12,7 +12,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <span className="text-2xl font-bold bg-gradient-text bg-clip-text text-transparent">
-              Teamup Tech
+              TeamUP Tech
             </span>
           </div>
 

@@ -2,8 +2,7 @@ import { Badge } from "@/components/ui/badge";
 
 const About = () => {
   const trustedCompanies = [
-    "Qualcomm", "CommScope", "Verizon", "Samsung", "ATX Networks", "HP", "Comcast", "SAIC", "KBR", "CACI"
-  ];
+    "Qualcomm", "CommScope", "Verizon", "Samsung", "ATX Networks"];
 
   return (
     <section className="relative min-h-screen flex items-center bg-gradient-hero overflow-hidden">
@@ -22,7 +21,7 @@ const About = () => {
                 <span className="text-foreground"> Excellence</span>
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Teamup Tech is a specialized engineering services firm delivering contract RF engineering talent 
+                TeamUP Tech is a specialized engineering services firm delivering contract RF engineering talent 
                 and end-to-end solutions for telecom and networking programs. Our engineers have shipped and 
                 supported large-scale cable infrastructure (DOCSIS/CMTS), 5G/LTE RAN, enterprise Wi-Fi/BLE, 
                 MoCA systems, IP video backbones, and public-safety P25 networks.

@@ -29,17 +29,14 @@ const AreasOfExpertise = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="relative min-h-screen flex items-center bg-gradient-hero overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
-          <Badge variant="outline" className="mb-4">
-            Areas of Expertise
-          </Badge>
+         
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
             <span className="bg-gradient-text bg-clip-text text-transparent">
-              Technical
+              Area of Expertise
             </span>
-            <span className="text-foreground"> Specializations</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Deep expertise across the full spectrum of RF engineering disciplines, 

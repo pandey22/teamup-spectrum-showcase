@@ -9,9 +9,9 @@ const CaseStudies = () => {
   const caseStudies = [
     {
       id: 1,
-      title: "Verizon — 5G/LTE RAN Optimization",
+      title: "5G/LTE RAN Optimization",
       shortDesc: "Enhanced Verizon's 5G/LTE networks through targeted optimization and interference resolution, ensuring improved reliability and customer experience.",
-      category: "5G/LTE",
+      category: "Verizon",
       client: "Verizon, a Tier-1 mobile network operator.",
       problem: "Network performance degradation in urban markets, with frequent throughput drops, call drops, and interference from overlapping neighbor cells.",
       approach: "Conducted drive tests and post-processing (WindCatcher/Actix), optimized handover parameters, audited neighbor relations, mitigated PIM/VSWR issues, and implemented Atoll-based redesigns with new link budgets.",
@@ -21,9 +21,9 @@ const CaseStudies = () => {
     },
     {
       id: 2,
-      title: "Samsung — RF Hardware Validation",
+      title: "RF Hardware Validation",
       shortDesc: "Validated Samsung's next-generation Wi-Fi and BLE devices at scale, ensuring seamless connectivity and compliance across global markets.",
-      category: "Wi-Fi/BLE",
+      category: "Samsung",
       client: "Samsung Electronics, consumer and enterprise device manufacturer.",
       problem: "Fragmented labs with inconsistent test setups and manual debug created delays in bringing Wi-Fi/BLE/MoCA products to market.",
       approach: "Designed automated RF test frameworks in Python/LabVIEW, centralized device status monitoring, streamlined Spirent integration, and standardized DVT suites for coexistence and antenna placement.",
@@ -33,9 +33,9 @@ const CaseStudies = () => {
     },
     {
       id: 3,
-      title: "Comcast — DOCSIS/CMTS Redesign",
+      title: "DOCSIS/CMTS Redesign",
       shortDesc: "Redesigned DOCSIS line cards for Comcast's CMTS infrastructure, extending product life and enhancing system reliability.",
-      category: "Cable/DOCSIS",
+      category: "Comcast",
       client: "Comcast Cable, Tier-1 cable provider.",
       problem: "Multiple RF component EOL issues threatened flagship DOCSIS downstream line cards, risking outages and loss of customer trust.",
       approach: "Re-architected RF lineup with new AGC loop design, re-qualified PLL/clock/power-detector chains, and updated PCB stackup. Automated multi-port regression with LabVIEW.",
@@ -45,9 +45,9 @@ const CaseStudies = () => {
     },
     {
       id: 4,
-      title: "Arris/CommScope — CMTS Hardware Expansion",
+      title: "CMTS Hardware Expansion",
       shortDesc: "Partnered with Arris/CommScope to expand CMTS downstream capacity while maintaining backward compatibility.",
-      category: "Cable/CMTS",
+      category: "Arris/CommScope",
       client: "Arris/CommScope, a global cable infrastructure provider.",
       problem: "Existing CMTS hardware faced channel capacity limitations and calibration issues with new MCMs.",
       approach: "Enhanced active analog gain control, implemented JESD timing fixes, and validated over extended temperature ranges. Standardized FCC compliance workflows.",
@@ -83,7 +83,7 @@ const CaseStudies = () => {
           {caseStudies.map((study, index) => (
             <Card 
               key={study.id} 
-              className="bg-gradient-card border-card-border backdrop-blur-sm hover:shadow-card transition-all duration-300 animate-fade-in flex flex-col aspect-square max-w-sm mx-auto"
+              className="bg-gradient-card border-card-border backdrop-blur-sm hover:shadow-card transition-all duration-300 animate-fade-in flex flex-col  max-w-sm mx-auto"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardHeader className="pb-3">
@@ -100,7 +100,7 @@ const CaseStudies = () => {
               <CardContent className="pt-0 pb-4 mt-auto">
                 <Dialog>
                   <DialogTrigger asChild>
-                    <Button variant="outline-hero" size="sm" className="group w-full text-sm h-9">
+                    <Button variant="outline-hero" size="sm" className="group w-50 text-sm h-10">
                       Read Full Case Study
                       <ChevronRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
                     </Button>

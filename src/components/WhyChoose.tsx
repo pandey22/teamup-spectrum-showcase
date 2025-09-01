@@ -36,17 +36,15 @@ const WhyChoose = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-gradient-hero">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
-          <Badge variant="outline" className="mb-4">
-            Why Choose Teamup Tech
-          </Badge>
+          
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
             <span className="bg-gradient-text bg-clip-text text-transparent">
-              Your Strategic
+              Why Choose
             </span>
-            <span className="text-foreground"> RF Partner</span>
+            <span className="text-foreground"> TeamUP Tech</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Proven expertise, measurable results, and end-to-end accountability 
