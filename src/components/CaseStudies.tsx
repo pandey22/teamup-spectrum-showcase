@@ -9,51 +9,51 @@ const CaseStudies = () => {
   const caseStudies = [
     {
       id: 1,
-      title: "CMTS Downstream Line Card — EOL Redesign & Output Power Expansion",
-      shortDesc: "Redesigned a DOCSIS/CMTS downstream line card to eliminate EOL parts, add active analog gain control, and boost channel capacity—without changing the software interface.",
-      category: "DOCSIS Infrastructure",
-      client: "Tier-1 cable infrastructure vendor",
-      problem: "Multiple EOL RF parts; new MCM gain curve broke calibration and constrained output power.",
-      approach: "Re-architected RF lineup; implemented AGC loop compatible with legacy control plane; re-qualified PLL/clock and power-detector chains; updated PCB stackup; scripted LabVIEW for multi-port regression.",
-      tools: "AWR/ADS, ADIsimPLL, LabVIEW, spectrum/VNA, high-BW DACs; DOCSIS QAM/OFDM MER/ACLR tests.",
-      outcome: ">99.9% factory parametric yield; increased channel output while maintaining accuracy; reduced field failures with predictive VCO diagnostics.",
-      impact: "Avoided multi-year software rework; accelerated time-to-market; sustained flagship CMTS revenue."
+      title: "Verizon — 5G/LTE RAN Optimization",
+      shortDesc: "Enhanced Verizon's 5G/LTE networks through targeted optimization and interference resolution, ensuring improved reliability and customer experience.",
+      category: "5G/LTE",
+      client: "Verizon, a Tier-1 mobile network operator.",
+      problem: "Network performance degradation in urban markets, with frequent throughput drops, call drops, and interference from overlapping neighbor cells.",
+      approach: "Conducted drive tests and post-processing (WindCatcher/Actix), optimized handover parameters, audited neighbor relations, mitigated PIM/VSWR issues, and implemented Atoll-based redesigns with new link budgets.",
+      tools: "Atoll, Actix, Ericsson ENM/AMOS, Huawei U2000, PRB analyzers.",
+      outcome: "Delivered smoother 5G NSA rollouts, improved accessibility and retainability KPIs, and restored user satisfaction with higher throughput stability.",
+      impact: "Achieved measurable improvements in network performance and customer satisfaction across multiple urban markets."
     },
     {
       id: 2,
-      title: "5G/LTE RAN Optimization — KPI Lift & Interference Resolution",
-      shortDesc: "Drove multi-market LTE/5G optimization: KPI uplift, PCI/neighbor audits, interference hunts, and Option-3A NSA integrations.",
-      category: "5G/LTE Networks",
-      client: "National MNO and defense customer networks",
-      problem: "Throughput drops, call drops/blocks, high noise floors, delayed 5G deployments.",
-      approach: "Drive tests + WindCatcher/Actix post-processing; parameter tuning (a1–a5, b1/b2), CA rollout, PIM/VSWR mitigation; Atoll-based redesigns and link budgets; ENM/AMOS scripts for mass updates.",
-      tools: "Atoll, XCAP/XCAL, TEMS, PRB analyzers, FieldFox/PR100; Ericsson ENM/AMOS, Huawei U2000.",
-      outcome: "Double-digit % improvements to Accessibility/Retainability/Throughput; faster 5G NSA turn-ups; reduced trouble tickets.",
-      impact: "Better user experience and SLA compliance; smoother feature launches."
+      title: "Samsung — RF Hardware Validation",
+      shortDesc: "Validated Samsung's next-generation Wi-Fi and BLE devices at scale, ensuring seamless connectivity and compliance across global markets.",
+      category: "Wi-Fi/BLE",
+      client: "Samsung Electronics, consumer and enterprise device manufacturer.",
+      problem: "Fragmented labs with inconsistent test setups and manual debug created delays in bringing Wi-Fi/BLE/MoCA products to market.",
+      approach: "Designed automated RF test frameworks in Python/LabVIEW, centralized device status monitoring, streamlined Spirent integration, and standardized DVT suites for coexistence and antenna placement.",
+      tools: "Python, LabVIEW, Spirent traffic generators, QAM analyzers, RSAs, VNAs.",
+      outcome: "Achieved consistency across six global test labs, reduced debugging cycles, and ensured global compliance for fast market release.",
+      impact: "Significantly accelerated time-to-market for multiple product lines while maintaining quality standards."
     },
     {
       id: 3,
-      title: "Enterprise Wi-Fi/BLE & MoCA DVT — Automated RF Test at Scale",
-      shortDesc: "Built Python/LabVIEW test frameworks for Wi-Fi/BLE/MoCA devices, cutting lab downtime and standardizing RF data collection across six global labs.",
-      category: "Enterprise Networking",
-      client: "Consumer/enterprise device vendors and network equipment makers",
-      problem: "Fragmented labs, inconsistent device health checks, manual Spirent runs, slow debug.",
-      approach: "Centralized asset DB; Python device-status pingers and auto-recovery; Spirent orchestration; standardized RF DVT suites (radiated/conducted, coexistence, antenna placement).",
-      tools: "Python, LabVIEW, Spirent, QAM analyzers, VNAs, RSAs; Excel/DataPower reporting.",
-      outcome: "Measurable reduction in downtime; faster triage; repeatable KPIs (MER, constellations, BER).",
-      impact: "Higher test throughput and clearer release gates."
+      title: "Comcast — DOCSIS/CMTS Redesign",
+      shortDesc: "Redesigned DOCSIS line cards for Comcast's CMTS infrastructure, extending product life and enhancing system reliability.",
+      category: "Cable/DOCSIS",
+      client: "Comcast Cable, Tier-1 cable provider.",
+      problem: "Multiple RF component EOL issues threatened flagship DOCSIS downstream line cards, risking outages and loss of customer trust.",
+      approach: "Re-architected RF lineup with new AGC loop design, re-qualified PLL/clock/power-detector chains, and updated PCB stackup. Automated multi-port regression with LabVIEW.",
+      tools: "ADS, ADIsimPLL, spectrum/VNA analyzers, LabVIEW.",
+      outcome: "Sustained Comcast's core DOCSIS platform revenues, improved system reliability, and avoided costly software rework.",
+      impact: "Enabled continued service delivery while maintaining customer satisfaction and revenue streams."
     },
     {
       id: 4,
-      title: "Public-Safety P25 Radio Systems — Encryption, Coverage & DAS/BDA Acceptance",
-      shortDesc: "Led P25 system upgrades—encryption/OTAR, subscriber programming, DAS/BDA performance validation, and RF interference hunts for mission-critical users.",
-      category: "Public Safety",
-      client: "Government/public-safety agencies",
-      problem: "Legacy programming, coverage gaps, and DAS compliance issues.",
-      approach: "Program governance and OTAR upgrades; acceptance test plans; field surveys; interference root-cause analysis; user training and technical guidelines.",
-      tools: "Spectrum analyzers, power meters, P25 test sets; IT support for CAD/MDT and router fleets.",
-      outcome: "Clean acceptance on new DAS/BDA sites; reduced outages; standardized radio use.",
-      impact: "More reliable comms for first responders; streamlined ops and maintenance."
+      title: "Arris/CommScope — CMTS Hardware Expansion",
+      shortDesc: "Partnered with Arris/CommScope to expand CMTS downstream capacity while maintaining backward compatibility.",
+      category: "Cable/CMTS",
+      client: "Arris/CommScope, a global cable infrastructure provider.",
+      problem: "Existing CMTS hardware faced channel capacity limitations and calibration issues with new MCMs.",
+      approach: "Enhanced active analog gain control, implemented JESD timing fixes, and validated over extended temperature ranges. Standardized FCC compliance workflows.",
+      tools: "AWR, ADS, Spirent, JESD timing simulators.",
+      outcome: "Enabled higher downstream channel density, extended product roadmap viability, and ensured compliance for multiple operator deployments.",
+      impact: "Successfully expanded system capacity while maintaining reliability and regulatory compliance."
     }
   ];
 
@@ -79,7 +79,7 @@ const CaseStudies = () => {
         </div>
 
         {/* Case Studies Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {caseStudies.map((study, index) => (
             <Card 
               key={study.id} 

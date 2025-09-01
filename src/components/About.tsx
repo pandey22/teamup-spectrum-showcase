@@ -1,24 +1,8 @@
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Shield, Zap, Target, ChevronRight } from "lucide-react";
 
 const About = () => {
-  const features = [
-    {
-      icon: Shield,
-      title: "Operators to OEMs",
-      description: "We've sat in every chair—MNO RAN teams, cable OEMs, device makers, and government programs—so we design for the lab and the field."
-    },
-    {
-      icon: Zap,
-      title: "Prototype-to-Production",
-      description: "Architecture, PCB/layout guidance, automated DVT, factory test, and field acceptance—one accountable team."
-    },
-    {
-      icon: Target,
-      title: "Automation First",
-      description: "Python/LabVIEW and Spirent-driven frameworks standardize KPIs, speed root-cause, and lift yield/quality."
-    }
+  const trustedCompanies = [
+    "Qualcomm", "CommScope", "Verizon", "Samsung", "ATX Networks", "HP", "Comcast", "SAIC", "KBR", "CACI"
   ];
 
   return (
@@ -49,10 +33,35 @@ const About = () => {
                 to design, validate, and scale high-reliability RF systems in the lab and in the field.
               </p>
             </div>
-
           </div>
 
-          {/* Additional content can go here if needed */}
+          {/* Trusted by Industry Leaders */}
+          <div className="space-y-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            <h3 className="text-2xl font-bold text-foreground mb-6">
+              Trusted by Industry Leaders
+            </h3>
+            <div className="space-y-4">
+              {trustedCompanies.map((company, index) => (
+                <div 
+                  key={company}
+                  className="bg-card/50 backdrop-blur-sm border border-border rounded-lg p-4 flex items-center justify-between hover:bg-card/70 transition-all duration-300 animate-fade-in"
+                  style={{ animationDelay: `${0.3 + index * 0.05}s` }}
+                >
+                  <span className="text-foreground font-medium">
+                    {company}
+                  </span>
+                  <div className="flex space-x-1">
+                    {[...Array(5)].map((_, i) => (
+                      <div 
+                        key={i} 
+                        className="w-2 h-2 bg-primary rounded-full"
+                      />
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
