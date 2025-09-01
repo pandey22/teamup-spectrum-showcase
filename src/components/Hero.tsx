@@ -17,12 +17,7 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="space-y-8 animate-fade-in">
-            {/* Badge */}
-            <div className="inline-flex items-center space-x-2 bg-secondary backdrop-blur-sm rounded-full px-4 py-2 text-sm">
-              <Radio className="w-4 h-4 text-primary" />
-              <span className="text-muted-foreground">RF Engineering Excellence</span>
-            </div>
-
+           
             {/* Headline */}
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
@@ -42,13 +37,7 @@ const Hero = () => {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="xl" className="group">
-                Hire RF Engineers
-                <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button variant="outline-hero" size="xl">
-                See Our Work
-              </Button>
+              
             </div>
 
           </div>

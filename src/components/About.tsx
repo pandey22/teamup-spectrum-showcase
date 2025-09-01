@@ -29,7 +29,7 @@ const About = () => {
           <div className="space-y-8 animate-fade-in">
             <div>
               <Badge variant="outline" className="mb-4">
-                About Teamup Tech
+                About TeamUP Tech
               </Badge>
               <h2 className="text-4xl lg:text-5xl font-bold mb-6">
                 <span className="bg-gradient-text bg-clip-text text-transparent">
