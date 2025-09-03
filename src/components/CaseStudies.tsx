@@ -100,7 +100,7 @@ const CaseStudies = () => {
               <CardContent className="pt-0 pb-4 mt-auto">
                 <Dialog>
                   <DialogTrigger asChild>
-                    <Button variant="outline-hero" size="sm" className="group w-50 text-sm h-10">
+                    <Button variant="outline-hero" size="sm" className="group w-50 text-sm h-10 mt-8">
                       Read Full Case Study
                       <ChevronRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
                     </Button>
