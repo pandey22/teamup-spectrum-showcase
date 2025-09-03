@@ -79,11 +79,11 @@ const CaseStudies = () => {
         </div>
 
         {/* Case Studies Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
           {caseStudies.map((study, index) => (
             <Card 
               key={study.id} 
-              className="bg-gradient-card border-card-border backdrop-blur-sm hover:shadow-card transition-all duration-300 animate-fade-in flex flex-col  max-w-sm mx-auto"
+              className="bg-gradient-card border-card-border backdrop-blur-sm hover:shadow-card transition-all duration-300 animate-fade-in flex flex-col w-full"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardHeader className="pb-3">
